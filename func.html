@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+       
+    function summa (number1,number2) {  // Создаем функцию и даем ей имя
+        var itog = number1 + number2;  // Задаем де йствия для функции
+        document.write("Summa is: " + itog + "<br>"); // Выдаем результат функции, то что будет после вызова функции
+    }
+        
+        summa(2,2); // Вызываем функцию для просто значений
+        
+        
+        var redCar = 10;
+        var blueCar = 20;
+        
+        summa(redCar,blueCar); // Вызываем функцию для переменных
+        
+        
+        
+//        //Считаем куб числа
+//        function cube() {
+//            var number = prompt("Укажите число для вычисления куба");
+//            var result = number*number*number;
+//            document.write("Куб числа " + number + " равен " + result + "<br>");
+//        }
+//        
+//        cube();
+        
+        
+        
+        //RETURN example
+        function square(number1) {
+            var itog = number1*number1;
+            return itog;
+        }
+        
+        var total = square(3);
+        
+        document.write(total);
+        
+        //
+        
+        function fio() {
+            var name = prompt("Enter your name");
+            var lastName = prompt("Your last name")
+            var otch = prompt("Otchestvo");
+            var result = name + " " + lastName + " " + otch;
+            return result;
+        }
+        
+        alert(fio());
+        
+        
+    </script>
+</body>
+</html>
