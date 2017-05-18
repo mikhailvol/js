@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var mass = ["Пон", "Вт", "Ср"];
+        document.write(mass[0]);
+        
+        var number1 = 1;
+        document.write("<p>--------</p>");
+        document.write(mass[number1]);
+        
+//        var ar = array("text1", "text2");
+//        var emptyAr = array(10);
+//        
+        
+        
+        
+        var country = ["Ukraine","USA","China"];
+        var population = ["146","310","1800"];
+        document.write(country[0] + " - population " + population[0] + "<br>");
+        document.write(country[1] + " - population " + population[1] + "<br>");
+        document.write(country[2] + " - population " + population[2] + "<br>");
+        
+        var varLenght = country.length;
+        document.write("Количество элементов в масиве: " + varLenght + "<br>");
+        
+        var students = ["Ivanv", "Doe", "Volkoff"];
+
+        // добавить в конец масива push
+        students.push("Petrov");
+
+        // добавить в начало масива unshift
+        students.unshift("Ptrenko");
+        document.write("1st element:" + students[0] + "<br>");
+        
+        // delete the last element form array
+        students.pop();
+        
+        // delete the first element form array
+        students.shift();
+
+        document.write("Количество элементов в масиве: " + students.length + "<br>");
+
+        // Show the last element of array
+        document.write("Последний элемент масива: " + students[students.length - 1] + "<br>");
+
+        
+
+        students = ["stud1", "stud2", "stud3", "stud4", "stud5", "stud6", "stud7"];
+        document.write("Переопределяем Количество элементов в масиве: " + students.length + "<br>");
+        
+        // Метод splice начиная с 3 удалить 2 элемента
+        students.splice(3,2);
+        document.write("Количество элементов в масиве после удаления splice: " + students.length + "<br>");
+
+        
+        // Метод splice добавление элементов начиная с 3 удалить 0 элементов, и после 3го добавить 1 элемент
+        students.splice(3,0, "Fedorchenko");
+        document.write("Количество элементов в масиве после добавления одного splice: " + students.length + "<br>");
+
+        // Заменить предпоследний элемент масива
+        var fruits = ["Apple", "Orange", "Pear", "Garnet"];
+        document.write(fruits + "<br>");
+        fruits.splice(fruits.length - 2,1, "pineapple");
+        document.write(fruits + "<br>");
+
+
+        // Метот реверс
+        var brands = ["Nokia", "Apple", "Meizu"];
+        document.write(brands + "<br>");
+        document.write(brands.reverse() + "<br>");
+        // Сортировка по алфавиту
+        document.write(brands.sort() + "<br>");
+        // Разделитель 
+        document.write(brands.join(" / ") + "<br>");
+
+        // Соеденяем масивы
+        var brand1 = ["Apple", "Meizu", "HTC", "Samsung"];
+        var brand2 = ["Logitech", "LG", "Sven"];
+        var totalBrands = brand1.concat(brand2);
+        document.write(totalBrands.join(" / ") + "<br>");
+        // Выборка из масива c 2 элемента по 4 элемент масива
+        var lucky = totalBrands.slice(2,4);
+        document.write(lucky.join(" / ") + "<br>");
+
+        // Многомерные масивы, сначала масив потом элемнт масива
+        var brand1 = ["Apple", "Meizu", "HTC", "Samsung"];
+        var brand2 = ["Logitech", "LG", "Sven"];
+        var brand3 = ["Bluedio", "Hitachi"];
+
+        var totalBrand = [brand1, brand2, brand3];
+        document.write(totalBrand [2] [0] + "<br>");
+    </script>
+</body>
+</html>

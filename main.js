@@ -20,9 +20,9 @@ console.log("mike".toUpperCase());
 // Objected types
 
 var obj = {name: "Mike"},
-    array = [1,2,3],
+    array = [1, 2, 3],
     regexp = /w+/g,
-    func = function(){};
+    func = function () {};
 
 console.log("----");
 console.log(typeof obj);

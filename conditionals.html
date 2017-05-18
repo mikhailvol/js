@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var weather = "sunny";
+        if(weather == "sunny") {
+            document.write("Ehhy!<br>");
+        }
+        else {
+            document.write("Fuck!<br>");
+        }
+        
+        var testCount = 200;
+        if(testCount <= 100) {
+            document.write("Переменная меньше или равна 100<br>")
+        } 
+        else {
+            document.write("Переменная больше 100<br>");
+        }
+
+        var mas = [1, 2, 3, 4];
+        if (mas.length >= 3){
+            document.write("Большой масив больше или равно 3 элемнтов<br>")
+        }
+        else {
+            document.write("Маленткий масив меньше 3 элемнтов<br>")
+            
+        }
+        
+        // двойное условие AND
+        var pogoda = "yasno";
+        var car = "yes";
+        if(pogoda == "yasno" && car == "yes") {
+            document.write("True<br>");
+        }
+        else {
+            document.write("False<br>");
+        }
+        
+        // двойное условие OR
+        var myFriend = "C";
+        if(myFriend == "B" || myFriend == "A") {
+            document.write("True<br>");
+        }
+        else {
+            document.write("False<br>");
+        }
+
+
+        var studentsList = ["1", "2", "3", "4", "5"];
+        if (studentsList.length == 5 && studentsList[studentsList.length - 1] == "5") {
+           document.write("Array is OK for us!<br>");
+           }
+        else {
+            document.write("Array is not OK for us!<br>");
+        }
+
+        
+        
+        // Если есть переменная
+        var testNumber = "KK";
+        if (testNumber) {
+        document.write("True");
+        }
+        else {
+        document.write("False");
+            
+        }
+    
+    </script>
+</body>
+</html>
