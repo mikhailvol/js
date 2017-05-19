@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function letterCount(myString) {
+        if (myString.length < 10) {
+            var result = "В веденном слове меньше 10 символов";
+        }
+        else if (myString.length > 10) {
+            var result = "В веденном слове больше 10 символов";
+        }
+        
+        else {
+            var result = "В веденном слове ровно 10 символов";
+        }
+        
+        return result;
+    }
+        
+        
+        var userWord = prompt ("Введи слово");
+        
+        if (userWord != null){
+            document.write(letterCount(userWord));
+            }
+        else {
+            document.write("NULL");
+            
+        }
+        
+        
+    </script>
+</body>
+</html>
