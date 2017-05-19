@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Replace method - заменяет в строке
+        var myString = "www,site,ua www,mysite,ua";
+        var regV = /,/g;
+        var result = myString.replace(regV, '.');
+        document.write(result + "<br>");
+        
+        
+        // home work 
+        var tel = "095/48/55/748";
+        var sign = "-";
+        
+        function changeTel (tel,sign) {
+            
+            var regV = /\//g;
+            var result = tel.replace(regV,sign);
+            document.write(result);
+        }
+        
+        changeTel(tel,sign);
+        
+        
+        
+    </script>
+</body>
+</html>

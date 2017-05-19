@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        
+        
+        // работа со строками
+        var name = "Miша"
+        
+        //Определяем диапазон кодов символов
+        
+//        var latinLetter = "aAzZ";
+//        document.write(latinLetter.charCodeAt(0) + "<br>");
+//        document.write(latinLetter.charCodeAt(1) + "<br>");
+//        document.write(latinLetter.charCodeAt(2) + "<br>");
+//        document.write(latinLetter.charCodeAt(3) + "<br>");
+//       
+        
+        
+        // диапазон кодов символов 65 - 122
+        
+        for (var i = 0; i < name.length; i++) { //перебор всех символов строки
+             
+            if (name.charCodeAt(i) < 65 || name.charCodeAt(i) > 122) {
+                document.write("Use only latin - yoou used incorrect symhol: <b>" + name.charAt(i) + "</b><br>");
+                
+            }
+        }
+        
+        
+        
+        document.write("<p>----</p>");
+        
+        
+        
+        // Проверить на соответствие латиницы слов из массива
+        var students = ["Miшa", "Maкs", "Ludа", "Юura"]; // Оределем массив
+        
+        for (var i = 0; i < students.length; i++) { // задаем цыкл для перебора элементов масива
+            
+            for (var j = 0; j < students[i].length; j++) { // Внутри цыкла задаем еще один цикл для перебора символов каждого элемента масива
+                
+                if (students[i].charCodeAt(j) < 65 || students[i].charCodeAt(j) > 122) { // Проверяем диапазон символов
+                    document.write("Use only latin - yoou used incorrect symhol: <b>" + students[i].charAt(j) + "</b> В элементе масива: " + students[i] + "<br>");
+                    
+                }
+                
+            }
+                
+                
+                
+        }
+        
+        
+    </script>
+</body>
+</html>

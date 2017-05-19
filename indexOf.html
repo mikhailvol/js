@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var mySite = prompt("Enter you link");
+        
+        function siteCheck(myString)  {
+            if (myString.indexOf("http://") == -1) {
+            document.write("write http:// before your link");
+            }
+            else { 
+                document.write("link is correct!");  
+            }
+            
+        }
+    
+        siteCheck(mySite);
+        
+    </script>
+</body>
+</html>

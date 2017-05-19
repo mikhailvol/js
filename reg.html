@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+    
+        
+        // Regular expressions. Метод Search - ищет совпадения в строке и передает число или -1, тоесть номер где совпало
+        
+        
+        var myIndex = "61000";
+        var regV = /^\d{5}$/; // http://www.exlab.net/files/tools/sheets/regexp/regexp.png
+        var result = myIndex.search(regV);
+        document.write("The result is: " + result + "<br>");
+        
+        
+        // Начинаеться ли передщанная строка с цифры
+        
+        var forTest ="2 cats and 9 dogs"; 
+        function numberTest (myString) { // создаем функцию
+            var regV = /^\d/; // Задаем регулярное выражение в переменную
+            if (myString.search(regV) == -1){ 
+                document.write("Строка начинаеться не с цифры");
+                
+            }
+            else {
+                document.write("Строка начинаеться с цифры");
+                
+            }
+        }
+        
+        numberTest(forTest);
+        
+        
+        document.write("<p>----</p>");
+        
+        
+         // Метод Match - ищет совпадения в строке и передает само совпадение
+        
+        var people = "Vodafon: 099-76-78-222 Life: 063-33-45-244 Star: 098-88-33-455 Vodafon: 095-45-48-233";
+        var regV = /099-\d{2}-\d{2}-\d{3}|095-\d{2}-\d{2}-\d{3}/g;
+        var result = people.match(regV);
+        document.write(result);
+        
+        document.write("<p>----</p>");
+        
+        // Еще немного о регулных выражениях https://www.youtube.com/watch?v=b10iGxNGm2o&list=PLhe16itim17cwmL3o1FV1_VYl9cayPMkj&index=50 
+        
+        var sites = "Вот тебе список сайто: www.mysite.ua, https://yoursite.ua, mysitt.UA, http://siteeer.ua вот те сайты в домене UA";
+        var regV = /(https?:\/\/)?(www\.)?[a-z0-9-]{2,}\.ua/gi;
+        var result = sites.match(regV);
+        for (var i = 0; i < result.length; i++) {
+        
+            document.write(result[i] + "<br>");
+            
+            
+        }
+
+
+    </script>
+</body>
+</html>
