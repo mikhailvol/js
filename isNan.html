@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var test = "Text or number here";
+        if (isNaN(test)) {
+            
+            document.write("В переменной не число! <br>"); 
+        }
+        else {
+            document.write (test);
+        }
+        
+        var randSymbol = ["Car", 22, "Moto", -111];
+        
+        function arrayTest(anyArray) {
+            
+            
+            for (var i = 0; i < anyArray.leght; i++) {
+                
+                if (isNaN(anyArray[i])) {
+                    
+                    document.write ("Элемент масива: " + anyArray[i] + "Не явл числом <br>");
+                }
+                else {
+                    document.write ("Элемент масива: " + anyArray[i] + "Явл числом <br>");
+                    
+                }
+                
+            }
+        }
+        
+        arrayTest(randSymbol);
+        
+        
+        
+    </script>
+</body>
+</html>
