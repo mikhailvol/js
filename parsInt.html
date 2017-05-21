@@ -22,9 +22,45 @@
         document.write(result + "<br>");
         
         
+        var myArray = ["100 USD", "200 goods", "400 speakers"];
+        
+        function stringToNumber (anyArray) {
+            
+            for (var i = 0; i < anyArray.length; i++) {
+                
+                anyArray[i] = parseInt(anyArray[i]);
+                document.write (anyArray[i] + "<br>");
+                
+            }
+            
+        }
         
         
-    
+        stringToNumber (myArray);
+        
+        
+        //Метод toFixed сколько цыфр показывать после зяпятой, потому что 0 обрезает! Если цифра после зяпятой только 1 то добавит еще 0!
+        
+        var price = 10.50;
+        
+        document.write(price.toFixed(2) + "<br>");
+        
+        
+        // Не работет какогото хера
+        var randPrice = [1.2, 33.2, 445.3, 10.2];
+        
+        function twoPrice (testArray) {
+            
+            for (var i = 0; i < testArray.leght; i++) {
+                
+                testArray[i] = testArray[i].toFixed(2);
+                document.write (testArray[i] + "<br>");
+                
+            }
+            
+        }
+        
+        twoPrice(randPrice);
     
     
     </script>

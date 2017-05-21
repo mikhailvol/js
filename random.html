@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        // 
+        
+        var rand = Math.round(Math.random() * 100);
+        document.write(rand + "<br>");
+        
+        // some range
+        
+        function myRandom (from, to) {
+            return Math.floor(Math.random() * (to - from + 1) + from);
+            
+        }
+        
+        var rand = myRandom(50,60);
+        document.write(rand);
+        
+    </script>
+</body>
+</html>

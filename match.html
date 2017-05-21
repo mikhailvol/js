@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        // обьект Matc , метод round округляет
+        
+        var age = 80.99;
+        age = Math.round(age);
+        document.write(age + "<br>");
+        
+        
+        // обьект Matc , метод ceil округляет только в верхнюю строну
+        // floor - окр в нижнюю
+        
+        var age = 80.99;
+        age = Math.ceil(age);
+        document.write(age + "<br>");
+        
+        
+        // ДЗ - не работает!???
+        
+        var myArray = [100.11, 10.2, 23,44, 66,66];
+        
+        function testFunc(anyArray, method) {
+            for (var i = 0; i < anyArray.leght; i++) {
+            
+                if (method === "round") {
+                    
+                    anyArray[i] = Math.round(anyArray[i]);
+                    document.write(anyArray[i] + "<br>");
+                    
+                }
+                
+                else if (method === "ceil") {
+                    anyArray[i] = Math.ceil(anyArray[i]);
+                    document.write(anyArray[i] + "<br>");
+                }
+                
+                else if (method === "floor") {
+                    anyArray[i] = Math.floor(anyArray[i]);
+                    document.write(anyArray[i] + "<br>");
+                }
+                
+                else {
+                    document.write("Трабл с именем медода округления!" + "<br>");
+                }
+            }
+            
+        }
+        
+        testFunc (myArray, "ceil");
+        
+        
+    </script>
+</body>
+</html>
